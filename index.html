@@ -5,18 +5,19 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
   </head>
   <body>
+    <div id="map"></div>
     <!-- <svg width=700 height=400 id="tweets1">
     </svg>
     <br>
     <svg width=700 height=400 id="tweets2">
     </svg> -->
-  <script>
+  <script src="map.js">
   Promise.all([
       d3.csv("us-counties.csv"),
       d3.csv("us-states.csv")
     ]).then(function(files) {
       console.log("testing")
-    }
+    });
   </script>
   </body>
 </html>
